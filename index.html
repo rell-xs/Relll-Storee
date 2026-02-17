@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JB RELL STORE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>JB RELL STORE</h1>
+<p>Premium Digital Account Marketplace</p>
+<img src="images/verified.png" class="verified-badge" alt="Verified Seller">
+<div class="header-btns">
+<a class="btn" href="https://wa.me/6285184105776">Hubungi WhatsApp</a>
+<a class="btn2" href="transaksi.html">Aturan Transaksi</a>
+<a class="btn2" href="faq.html">FAQ</a>
+</div>
+<input type="text" id="searchInput" placeholder="Cari akun...">
+</header>
+
+<section class="catalog">
+<h2>Katalog Akun</h2>
+<div class="filter">
+<button onclick="filterGame('all')">Semua</button>
+<button onclick="filterGame('ml')">ML</button>
+<button onclick="filterGame('ff')">FF</button>
+<button onclick="filterGame('rb')">Roblox</button>
+</div>
+<div id="productContainer" class="grid"></div>
+</section>
+
+<section class="testi">
+<h2>Testimoni</h2>
+<div id="testiContainer"></div>
+<div class="slider-nav">
+<button onclick="prevTesti()">◀</button>
+<button onclick="nextTesti()">▶</button>
+</div>
+</section>
+
+<div id="promoPopup" class="popup">
+<p>🔥 Promo Hari Ini: Diskon 10% untuk ML Sultan!</p>
+<button onclick="closePopup()">Tutup</button>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img" src="">
+<div id="lightbox-nav">
+<button onclick="prevLightbox(event)">◀</button>
+<button onclick="nextLightbox(event)">▶</button>
+</div>
+</div>
+
+<!-- Musik Spotify -->
+<div style="position:fixed;bottom:10px;right:10px;z-index:10000;">
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2MyUCsl25eb" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+
+<footer>
+© 2026 Rell Store
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
